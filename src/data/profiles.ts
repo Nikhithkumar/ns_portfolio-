@@ -1,0 +1,240 @@
+import type { Profile } from "../types";
+import heroImage from "../assets/images/hero.png";
+
+const EXPERIENCE_YEARS = 5;
+
+const IMG = {
+  hero: heroImage,
+  p1: "https://rsmus.com/content/dam/rsm/services/business-tax/social/tax_digital_services_social.jpg",
+  p2: "https://media.licdn.com/dms/image/v2/D560BAQFh0EfxuWvVkQ/company-logo_200_200/company-logo_200_200/0/1681273274874/payzigo_logo?e=2147483647&v=beta&t=cAqueFlFTy4xYfVcF7FBCWzSdB_mt1TpJdW0o-ct6zY",
+  p3: "https://yeldam.com/wp-content/uploads/2026/10/Yeldam-Cookies-in-a-Sunlit-Garden-100kb.jpeg",
+  p4: "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&w=900&q=80",
+};
+
+export const profiles: Profile[] = [
+  {
+    slug: "nikhith",
+    brand: { first: "Nikhith", last: "Somasani" },
+    seoTitle: "Nikhith Somasani — Full Stack Software Engineer",
+    navCta: "Let's Talk",
+    hero: {
+      badge: "Available for Software Development Opportunities",
+      titleLead: "I Build Scalable",
+      titlePlain: "Web & Mobile",
+      titleHighlight: "Applications",
+      subtitle: `Full Stack Software Engineer with ${EXPERIENCE_YEARS}+ years of professional experience building enterprise applications, .NET Core microservices, Azure integrations, web platforms, and mobile applications using React Native.`,
+      primaryCta: "View My Projects",
+      secondaryCta: "Contact Me",
+      followLabel: "Connect",
+      image: IMG.hero,
+      stats: [
+        { icon: "award", value: EXPERIENCE_YEARS, suffix: "+", label: "Years of Professional Experience" },
+        { icon: "folder", value: ".NET + Azure", label: "" },
+        { icon: "smile", value: "Web + Mobile", label: "Development" },
+      ],
+      socials: [
+        { type: "github", url: "https://github.com/Nikhithkumar/" },
+        { type: "linkedin", url: "https://www.linkedin.com/in/nikhith-kumar-somasani/" },
+        { type: "medium", url: "https://medium.com/@nikhithsomasani" },
+        { type: "x", url: "https://x.com/nikhithsomasani" },
+        { type: "instagram", url: "https://instagram.com/nikhithsomasani" },
+      ],
+    },
+    about: {
+      label: "About Me",
+      signature: "Nikhith",
+      headingPlain: "Building Software with Code &",
+      headingHighlight: "Purpose.",
+      paragraph: `I'm a Full Stack Software Engineer with ${EXPERIENCE_YEARS}+ years of professional experience developing web, mobile, and enterprise applications. My expertise includes C#, .NET Core, React.js, React Native, Node.js, SQL Server, and Microsoft Azure.\n\nI have hands-on experience developing microservices, integrating external APIs, implementing asynchronous messaging with Azure Service Bus, supporting CI/CD deployments, and working with cloud-based services.\n\nI focus on writing maintainable code, building reliable APIs, improving application performance, and delivering practical solutions to real-world problems.`,
+      points: [
+        "Scalable backend development and microservices",
+        "Clean, maintainable code",
+        "REST API development and third-party integrations",
+        "Cloud integration, monitoring, and deployment",
+      ],
+      cvLabel: "Download CV",
+      cvUrl: "",
+    },
+    skills: {
+      label: "Skills & Stack",
+      footnote: "Continuous learning and engineering excellence",
+      items: [
+        { name: "React.js" },
+        { name: "React Native" },
+        { name: "JavaScript" },
+        { name: "TypeScript" },
+        { name: "Redux Toolkit" },
+        { name: "Zustand" },
+        { name: "TanStack Query" },
+        { name: "Tailwind CSS" },
+        { name: "C#" },
+        { name: ".NET Core" },
+        { name: "ASP.NET Core Web API" },
+        { name: "Microservices" },
+        { name: "Node.js" },
+        { name: "Express.js" },
+        { name: "Entity Framework Core" },
+        { name: "REST APIs" },
+        { name: "Azure Service Bus" },
+        { name: "Azure Functions" },
+        { name: "Azure Key Vault" },
+        { name: "Azure Blob Storage" },
+        { name: "Azure Logic Apps" },
+        { name: "Application Insights" },
+        { name: "Azure DevOps" },
+        { name: "CI/CD" },
+        { name: "SQL Server" },
+        { name: "PostgreSQL" },
+        { name: "MongoDB" },
+        { name: "Firebase" },
+        { name: "Docker" },
+        { name: "Git" },
+        { name: "xUnit" },
+        { name: "Hangfire" },
+      ],
+    },
+    services: {
+      label: "Services",
+      cta: "Learn more",
+      items: [
+        { icon: "code", title: ".NET Backend Development", description: "Build secure, maintainable REST APIs and scalable backend services using C#, ASP.NET Core, Entity Framework Core, and SQL Server." },
+        { icon: "pen", title: "Full Stack Web Development", description: "Develop responsive web applications using React.js, JavaScript, TypeScript, Node.js, and .NET Core." },
+        { icon: "api", title: "Mobile App Development", description: "Build cross-platform Android and iOS applications using React Native, Expo, reusable components, and API integrations." },
+        { icon: "gauge", title: "Azure & Microservices Integration", description: "Integrate cloud services, asynchronous messaging, secure external APIs, background jobs, monitoring, and deployment pipelines." },
+      ],
+    },
+    projects: {
+      label: "Featured Projects",
+      viewAll: "View all projects",
+      items: [
+        {
+          title: "TaxPortal",
+          description: "Enterprise tax technology platform built for audit workflows and cloud-based integrations.",
+          image: IMG.p1,
+          tags: ["C#", ".NET Core", "React.js", "Azure Service Bus", "Azure Functions"],
+          link: "#",
+          details: "An enterprise tax audit portal involving .NET Core microservices, external API integrations, Azure Service Bus messaging, secure authentication using Azure Managed Identity, and recurring background jobs. I designed and developed backend services, published and consumed Service Bus messages, supported CI/CD deployments, worked with Azure services for application integration and monitoring, and supported recurring tasks using Hangfire with automated xUnit testing.",
+        },
+        {
+          title: "Payzigo Consumer",
+          description: "Consumer-facing fintech mobile application with API integration and account workflows.",
+          image: IMG.p2,
+          tags: ["React Native", "TypeScript", "REST APIs"],
+          link: "https://payzigo.in/",
+          details: "A consumer-facing fintech mobile application involving mobile application development and API integration.",
+        },
+        {
+          title: "Yeldam Kitchen",
+          description: "Food subscription and delivery platform for healthy meal discovery and ordering.",
+          image: IMG.p3,
+          tags: ["MERN Stack", "React Native", "MongoDB"],
+          link: "https://yeldam.com/",
+          details: "A food platform focused on healthy meals, restaurant discovery, subscription-based food services, and delivery workflows.",
+        },
+        {
+          title: "Traker",
+          description: "Task management application for tracking productivity and delivery workflows.",
+          image: IMG.p4,
+          tags: ["React.js", "ASP.NET Core", "Expo"],
+          link: "https://traker.in/",
+          details: "A task management application focused on task tracking and productivity workflows across web and mobile interfaces.",
+        },
+      ],
+    },
+    experience: {
+      label: "Experience",
+      items: [
+        {
+          role: "Technical Delivery Associate 2",
+          company: "RSM US LLP",
+          period: "September 2025 – Present",
+          description: "Designed and developed .NET Core microservices for an enterprise Tax Portal using Azure services and Blob Storage.",
+          responsibilities: [
+            "Implemented Azure Service Bus message publishing and consumption for asynchronous communication between microservices.",
+            "Configured CI/CD deployments and application environments using Azure DevOps.",
+            "Integrated external APIs using Azure Managed Identity for secure service-to-service authentication.",
+            "Implemented background and recurring job processing using Hangfire to automate scheduled tasks and workflows.",
+            "Developed and executed unit and integration tests using xUnit to validate microservices, API integrations, and application functionality.",
+          ],
+          technologies: ["C#", ".NET Core", "Microservices", "Azure Service Bus", "Azure Blob Storage", "Azure Managed Identity", "Azure DevOps", "Hangfire", "xUnit", "REST APIs"],
+        },
+        {
+          role: "Software Development Engineer",
+          company: "Wallero Technologies",
+          period: "November 2023 – August 2025",
+          description: "Developed and maintained a Food Subscription Mobile App and a Healthy Food Finder app using React Native, the MERN stack, and .NET Core.",
+          responsibilities: [
+            "Implemented scalable backend services, ensuring efficient data management and smooth application performance.",
+            "Integrated real-time data and location-based features to improve user experience and provide personalized food and store recommendations.",
+          ],
+          technologies: ["React Native", "React.js", "JavaScript", "TypeScript", "Node.js", "Express.js", "MongoDB", ".NET Core", "REST APIs"],
+        },
+        {
+          role: "Software Engineer",
+          company: "Neoteq Software Solutions",
+          period: "March 2023 – November 2023",
+          description: "Developed and maintained iOS and Android applications, including PAYZIGO CONSUMER, a fintech business-to-customer app.",
+          responsibilities: [
+            "Implemented API calls, error handling, UI/UX improvements, Redux state management, and AsyncStorage functionality.",
+          ],
+          technologies: ["React Native", "JavaScript", "Redux", "AsyncStorage", "REST APIs", "Mobile Application Development"],
+        },
+        {
+          role: "Associated Analyst",
+          company: "SmartDrive Indian Pvt Limited",
+          period: "July 2021 – January 2023",
+          description: "Analyzed large datasets and maintained data accuracy and consistency for operational reporting.",
+          responsibilities: [
+            "Identified recurring issues and data inconsistencies, documented findings, and provided actionable feedback to support process improvements.",
+          ],
+          technologies: ["Data Analysis", "Data Validation", "Data Quality", "Operational Reporting", "Process Improvement"],
+        },
+      ],
+    },
+    testimonials: {
+      label: "Professional Focus",
+      items: [
+        {
+          quote: "I focus on clean code, separation of concerns, reusable components, and backend services that are easier to test and maintain.",
+          name: "Maintainable Architecture",
+          title: "Architecture",
+          avatar: "",
+          rating: 0,
+        },
+        {
+          quote: "I work with secure API authentication, managed identities, input validation, error handling, and automated tests.",
+          name: "Security & Reliability",
+          title: "Quality",
+          avatar: "",
+          rating: 0,
+        },
+        {
+          quote: "I work on API integrations, caching, background processing, monitoring, and deployment workflows to support reliable applications.",
+          name: "Performance & Delivery",
+          title: "Delivery",
+          avatar: "",
+          rating: 0,
+        },
+      ],
+    },
+    contact: {
+      label: "Get In Touch",
+      headingPlain: "Let's Build Something",
+      headingHighlight: "Meaningful Together.",
+      subtext: "Have a project in mind or looking for a software engineer to join your team? I'm interested in opportunities involving .NET Core, Azure, full-stack development, and React Native.",
+      submitLabel: "Send Message",
+      successMessage: "Thanks! Your message has been sent. I'll get back to you soon.",
+      items: [
+        { icon: "mail", label: "Email", value: "Available on request" },
+        { icon: "phone", label: "Phone", value: "Available on request" },
+        { icon: "pin", label: "Location", value: "Hyderabad, India" },
+        { icon: "clock", label: "Availability", value: "Open to opportunities" },
+      ],
+    },
+    footer: { copyright: "All rights reserved.", privacy: "Profile", terms: "Contact" },
+  },
+];
+
+export function getProfile(slug?: string | null): Profile {
+  return profiles.find((p) => p.slug === slug) ?? profiles[0];
+}

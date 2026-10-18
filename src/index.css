@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { @apply bg-ink font-sans font-light text-white/80 antialiased; background-image: radial-gradient(ellipse at top right, rgba(246,185,59,.08), transparent 55%); }
+::selection { background: rgba(246,185,59,.35); }
+::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-thumb { background: #2a2518; border-radius: 8px; }
